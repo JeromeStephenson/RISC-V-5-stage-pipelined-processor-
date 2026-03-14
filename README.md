@@ -4,10 +4,9 @@ A high-performance, 5-stage pipelined processor implementing the RISC-V 32I (Bas
 
 # Architectural Overview
 
-
 The processor is divided into five distinct stages to ensure efficient instruction processing:
 
-Instruction Fetch (IF): Accesses Instruction Memory to retrieve the next 32-bit instruction based on the Program Counter (PC).
+##Instruction Fetch (IF): Accesses Instruction Memory to retrieve the next 32-bit instruction based on the Program Counter (PC).
 
 Instruction Decode (ID): Translates the instruction, generates control signals, and reads operands from the Register File.
 
