@@ -6,15 +6,15 @@ A high-performance, 5-stage pipelined processor implementing the RISC-V 32I (Bas
 
 The processor is divided into five distinct stages to ensure efficient instruction processing:
 
-## Instruction Fetch (IF): Accesses Instruction Memory to retrieve the next 32-bit instruction based on the Program Counter (PC).
+**Instruction Fetch (IF):** Accesses Instruction Memory to retrieve the next 32-bit instruction based on the Program Counter (PC).
 
-## Instruction Decode (ID): Translates the instruction, generates control signals, and reads operands from the Register File.
+**Instruction Decode (ID):** Translates the instruction, generates control signals, and reads operands from the Register File.
 
-## Execute (EX): Performs arithmetic/logic operations using the ALU and calculates branch target addresses.
+**Execute (EX):** Performs arithmetic/logic operations using the ALU and calculates branch target addresses.
 
-## Memory (MEM): Handles data memory access for Load and Store instructions.
+**Memory (MEM):** Handles data memory access for Load and Store instructions.
 
-## Write Back (WB): Commits the final results back to the Register File
+**Write Back (WB):** Commits the final results back to the Register File
 
 
 # Features
