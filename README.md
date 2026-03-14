@@ -96,7 +96,8 @@ Forwarding and Bypassing are used to address the data hazard.
 
 
 
-
+![condition for data hazard.png](https://github.com/JeromeStephenson/RISC-V-5-stage-pipelined-processor-/blob/main/riscv_diagram.png)
+![condition table.png](https://github.com/JeromeStephenson/RISC-V-5-stage-pipelined-processor-/blob/main/riscv_diagram.png)
 
 
 
