@@ -48,3 +48,8 @@ To maintain the integrity of the pipeline and prevent "race conditions," a dedic
 ## IMPLIMENTATION AND PROCEDURE
 
 To implement a 5-stage pipeline, synchronous pipeline registers must be strategically inserted between each stage of the datapath to buffer and propagate instruction data, control signals, and operands. These registers—IF/ID, ID/EX, EX/MEM, and MEM/WB—act as state-preserving boundaries that allow the processor to process five different instructions simultaneously in a single clock cycle. By dividing the execution flow into discrete temporal segments, each instruction part moves through the stages in a synchronized manner, ensuring that the correct control bits and calculated results reach their final destination without interference. This architecture is an evolved, high-throughput extension of the single-cycle datapath, where the logic is no longer completed in one cycle but is instead distributed across the pipeline to achieve much higher operating frequencies.
+
+
+
+
+
