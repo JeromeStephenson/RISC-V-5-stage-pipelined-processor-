@@ -53,6 +53,52 @@ To implement a 5-stage pipeline, synchronous pipeline registers must be strategi
 ![riscv_diagram.png](https://github.com/JeromeStephenson/RISC-V-5-stage-pipelined-processor-/blob/main/riscv_diagram.png)
 
 
+## DISCUSSIONS
+
+
+
+**1. Fetch Cycle Datapath**
+
+The first phase of the instruction execution process is called the fetch cycle. The fetch cycle's primary objective is to get the subsequent instruction from memory so that the processor can decode and execute it.
+
+**2. Decode Cycle Datapath**
+
+The second phase of executing an instruction is called the decode cycle. Interpreting the fetched instruction and setting up the required inputs (registers, control signals) for later stages are the primary goals of this level.
+
+**3. Execution Cycle Datapath**
+
+The third phase of the instruction execution process is known as the execution cycle. Its primary functions include determining the result of a branch, calculating memory addresses for load/store operations, and carrying out the arithmetic or logical operation specified by the instruction.
+
+**4. Memory Read/Write Cycle Datapath** 
+
+The fourth step in the execution of an instruction is called the Memory Read or Write Cycle. When loading or storing instructions, this step is in charge of communicating with data memory. The processor skips this step and proceeds to the writeback stage if the instruction is not a memory operation.
+
+**5. Write Back Cycle Datapath**
+
+The fifth and last phase of the instruction execution process is the writeback cycle. Writing the outcome of an instruction—whether it comes from an arithmetic operation or a memory load—back to the destination register is the primary goal of this stage.
+
+Note: Hazard Unit
+
+**Structural Hazard**
+
+Instruction execution inside a single clock cycle is not supported by hardware.
+The RISC-V pipelining design will be structurally hazardous without two memories.
+
+**Data Risk**
+
+There is no data available for execution.
+could happen if a pipeline stalls.
+Use the forwarding or bypassing strategy to solve the problem.
+
+**A remedy for the data Hazard.** 1. Using nops to solve data hazards 2. Using forwarding or bypassing to solve data hazards
+
+Forwarding and Bypassing are used to address the data hazard.
+
+
+
+
+
+
 
 
   
