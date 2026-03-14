@@ -22,24 +22,24 @@ Supported Instruction Types
 
 The core provides full support for the standard RISC-V instruction formats:
 
-    R-Type: Register-to-register operations (e.g., ADD, SUB, AND, OR).
+**R-Type:** Register-to-register operations (e.g., ADD, SUB, AND, OR).
 
-    I-Type: Immediate operations and Loads (e.g., ADDI, LW).
+**I-Type:** Immediate operations and Loads (e.g., ADDI, LW).
 
-    S-Type: Store operations (e.g., SW).
+**S-Type:** Store operations (e.g., SW).
 
-    B-Type: Conditional branching (e.g., BEQ, BNE).
+**B-Type:** Conditional branching (e.g., BEQ, BNE).
 
-    J-Type: Jump and Link (e.g., JAL).
+**J-Type:** Jump and Link (e.g., JAL).
 
-    U-Type: Upper Immediate instructions (e.g., LUI).
+**U-Type:** Upper Immediate instructions (e.g., LUI).
 
-Hazard Management Unit
+## Hazard Management Unit
 
 To maintain the integrity of the pipeline and prevent "race conditions," a dedicated Hazard Unit is implemented to handle:
 
-    Data Hazards: Resolved via Forwarding (bypassing) logic to minimize stalls, allowing the EX stage to use results before they are written back to the register file.
+**Data Hazards:** Resolved via Forwarding (bypassing) logic to minimize stalls, allowing the EX stage to use results before they are written back to the register file.
 
-    Structural Hazards: Managed through efficient resource partitioning (separate Instruction and Data memories).
+**Structural Hazards:** Managed through efficient resource partitioning (separate Instruction and Data memories).
 
-    Control Hazards: Handled through pipeline flushing logic during branch mispredictions.
+**Control Hazards:** Handled through pipeline flushing logic during branch mispredictions.
