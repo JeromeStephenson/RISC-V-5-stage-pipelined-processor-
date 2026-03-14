@@ -52,4 +52,4 @@ To implement a 5-stage pipeline, synchronous pipeline registers must be strategi
 
 
 
-
+  
