@@ -1,4 +1,4 @@
-module ALU(A,B,Result,ALUControl,OverFlow,Carry,Zero,Negative);
+module ALU(Result,OverFlow,Carry,Zero,Negative,A,B,ALUControl);
 
     input [31:0]A,B;
     input [2:0]ALUControl;
