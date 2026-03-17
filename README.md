@@ -102,6 +102,13 @@ Forwarding and Bypassing are used to address the data hazard.
 
 
 
+# SIMULATION RESULTS AND TOOLS USED
+The simulation has been done in Modelsim that supports verilog simulation.
+
+The output waveform is : 
+![condition table.png](https://github.com/JeromeStephenson/RISC-V-5-stage-pipelined-processor-/blob/main/condition%20table.png)
+
+
 
 
   
